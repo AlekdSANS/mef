@@ -1,0 +1,182 @@
+html{
+    margin:auto;
+    width: 1200px;
+    text-align: center;
+    align-items: center;
+}
+
+h2{
+    color:azure;
+}
+
+p{
+    color:azure;
+}
+
+body{
+    background-color: rgb(66, 66, 66);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.navbar{
+    top: 0px;
+    position: fixed;
+    width: 1200px;
+    height: 60px;
+    background-color: rgb(41, 41, 41);
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    }
+
+    /*
+    .navbar a{
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+        display: block;
+        text-align: center;
+        font-size: 20px;
+        } 
+*/
+
+.navbar a:hover{
+    background-color: hsl(0, 0%, 10%);
+    height: 50px;
+    transition: .5s;
+    }
+
+
+label.logo{
+    color: white;
+    font-size: 25px;
+    line-height: 80px;
+    padding: 0 0px;
+    margin-left: 5px;
+    margin-right: auto;
+    font-weight: bold;
+  }
+
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: block;
+    margin-left: 20px;
+}
+
+#check{
+    display: none;
+}
+
+
+
+
+.mail{
+    filter: invert(100%);
+} 
+
+.twitter{
+    filter: invert(100%);
+}
+
+.discord{
+    filter: invert(100%);
+}
+
+.facebook{
+    filter: invert(100%);
+} 
+
+
+
+
+.box1{
+    display: inline-flex;
+    background-color:  rgb(41, 41, 41) ;
+    border-style: none;
+    /* height: 50px;
+    width: 50px; */
+    margin-left: auto;
+     }
+
+.box2{
+    display: inline-flex;
+    background-color:  rgb(41, 41, 41) ;
+    border-style: none;
+    /* height: 50px;
+    width: 50px; */
+     }
+     
+.box3{
+    display: inline-flex;
+    background-color:  rgb(41, 41, 41) ;
+    border-style: none;
+    /* height: 50px;
+    width: 50px; */
+     }
+
+.box4{
+    display: inline-flex;
+    background-color:  rgb(41, 41, 41) ;
+    border-style: none;
+    /* height: 50px;
+    width: 50px; */
+    }
+
+
+
+
+    ul{
+      display: flex;
+      flex-direction: column;
+      position: fixed;
+      width: 1160px;
+      height: 30vh;
+      background-color: rgb(41, 41, 41);
+      top: -100%;
+      text-align: center;
+      transition: all 1s;
+    }
+     nav ul li{
+      display: block;
+      margin: 20px 15px;
+      line-height: 30px;
+    } 
+    nav ul li a{
+      font-size: 20px;
+    }
+
+    a:hover{
+      background: none;
+      color: #fbfbfb;
+      height: 150px;
+      text-align: center;
+    }
+
+    #check:checked ~ ul{
+        top: 44px;;
+    }
+
+
+    @media (max-width: 1199px){
+
+        html{
+            width: 810px;
+        }
+
+        .navbar{
+            width: 810px;
+            }
+
+            ul{
+                width: 770px;
+                height: 30vh;
+            }
+    }
